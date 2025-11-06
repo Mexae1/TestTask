@@ -4,7 +4,7 @@
 1. Для запуска необходим docker.
 2. Скачать detection-people.tar с https://drive.google.com/drive/folders/1lZtlKdabZTa9GIIxlA2sv0I3GHy-mKyK?usp=sharing
 3. Перейти в директрию файла и загрузить образ из tar-файла командой
-4. 
+   
     docker load -i "%CD%\detection_people.tar"
 5. Запустить контейнер командой 
     
