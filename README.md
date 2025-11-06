@@ -6,11 +6,11 @@
     3. Перейти в директрию файла и загрузить образ из tar-файла командой 
         docker load -i "%CD%\detection_people.tar"
     4. Запустить контейнер командой 
-        docker run -it --rm -v "%CD%/output:/app/output" detection-people:latest
+                docker run -it --rm -v "%CD%/output:/app/output" detection-people:latest
     5. обработанный файл появится в папке output
 
-    В случае необходимости тестирования на другом видео файле в рабочей директории созадайте папку input и поместите туда виедо c названием crowd.mp4. В этом случае контейнер необходимо запустить командой 
-        docker run -it --rm -v "%CD%\input:/app/input" -v "%CD%/output:/app/output" detection-people:latest
+В случае необходимости тестирования на другом видео файле в рабочей директории созадайте папку input и поместите туда виедо c названием crowd.mp4. В этом случае контейнер необходимо запустить командой 
+            docker run -it --rm -v "%CD%\input:/app/input" -v "%CD%/output:/app/output" detection-people:latest
 Шаги по улучшению:
     1. Для улучшения качества детекции можно использовать Faster R-CNN, RT‑DETR или LW‑DETR.
         Можно изменить трэш-холд чтобы избавиться от неточных детекций.
