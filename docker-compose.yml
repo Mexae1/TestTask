@@ -1,0 +1,9 @@
+
+services:
+  detection-people:
+    build: .
+    container_name: detection-people
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+    command: python app/main.py
